@@ -37,7 +37,8 @@ resource "aws_security_group_rule" "ingress-http" {
 
 resource "aws_instance" "ec2" {
   ami           = data.aws_ami.debian.id
-  instance_type = var.vm_instance_type
+  instance_type = "t3a.small"
+  # instance_type = var.vm_instance_type
   key_name      = aws_key_pair.ec2.key_name
 
   vpc_security_group_ids = [aws_security_group.ec2.id]
