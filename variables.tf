@@ -14,11 +14,6 @@ variable "vm_disk_size" {
   default = "20"
 }
 
-variable "vm_os_user" {
-  description = "Admin username to connect to instance via SSH. Set to 'admin' because we use debian OS."
-  default     = "admin"
-}
-
 variable "keypair_public" {
   description = "Public key to provision to the instance"
   default = ""
