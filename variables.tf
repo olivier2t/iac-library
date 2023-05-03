@@ -11,7 +11,7 @@ variable "vm_instance_type" {
 
 variable "vm_disk_size" {
   description = "Disk size for the instance (Go)"
-  default = "20"
+  default = 20
 }
 
 variable "keypair_public" {
